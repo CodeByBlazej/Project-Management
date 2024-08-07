@@ -1,7 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    debug (1.9.2)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
     diff-lcs (1.5.1)
+    io-console (0.7.2)
+    irb (1.14.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.7-arm-linux)
@@ -14,8 +21,14 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
+    psych (5.1.2)
+      stringio
     racc (1.8.1)
     rack (2.2.9)
+    rdoc (6.7.0)
+      psych (>= 4.0.0)
+    reline (0.5.9)
+      io-console (~> 0.5)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -29,6 +42,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
+    stringio (3.1.1)
 
 PLATFORMS
   aarch64-linux
@@ -39,6 +53,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  debug
   nokogiri
   rack (~> 2.2.4)
   rspec
